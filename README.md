@@ -18,6 +18,6 @@ Clone repository with command and after GAME!!!
 ```bash
 $ git clone "https://github.com/vscalcione/snake-python-game.git"
 $ cd snake-python-game
-$ sudo chmod +x snake-python-game.py
+$ sudo chmod +x snake-game.py
 $ sudo python snake-game.py
 ```
