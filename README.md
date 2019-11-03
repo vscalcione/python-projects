@@ -2,7 +2,7 @@
 
 To run the game, you must first configure the environment with some layouts.
 
-Install these dependecies  
+Install these dependecies:
 ```bash 
 $ sudo apt-get install python (for python setup)
 $ python -V (verify python's version)
@@ -16,7 +16,7 @@ $ pip3 install pygame
 ```
 Clone repository with command and after GAME!!!
 ```bash
-$ git clone ""https://github.com/vscalcione/snake-python-game.git"
+$ git clone "https://github.com/vscalcione/snake-python-game.git"
 $ cd snake-python-game
 $ sudo chmod +x snake-python-game.py
 $ ./snake-python-game
