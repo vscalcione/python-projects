@@ -15,7 +15,7 @@ class menuBar:
         fileDropdown.add_command(label="New File", accelerator="Ctrl+N", command=parent.newFile)
         fileDropdown.add_command(label="Open File", accelerator="Ctrl+O", command=parent.openFile)
         fileDropdown.add_command(label="Save", accelerator="Ctrl+S", command=parent.save)
-        fileDropdown.add_command(label="Save with name", accelerator="Ctrl+Shift+S", command=parent.saveAs)
+        fileDropdown.add_command(label="Save as", accelerator="Ctrl+Shift+S", command=parent.saveAs)
         fileDropdown.add_separator()
         fileDropdown.add_command(label="Quit", command=parent.master.destroy)
 
