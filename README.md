@@ -31,3 +31,14 @@ $ cd snake-python-game
 $ sudo chmod +x text-editor.py
 $ sudo python text-editor.py
 ```
+
+
+# PyCalculator
+This is a basic calculator with a command line interface made in Python
+For run the script (pyCalculator.py), execute the commands below:
+```bash
+$ sudo git clone "https://github.com/vscalcione/snake-python-game.git"
+$ cd snake-python-game
+$ sudo chmod +x pyCalculator.py
+$ sudo python pyCalculator.py
+```
