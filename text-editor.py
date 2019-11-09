@@ -1,4 +1,5 @@
-## Text-editor developed by Scalcione Vincenzo ##
+## ========== Text-editor developed by Scalcione Vincenzo ========== ##
+
 import tkinter as tk
 from tkinter import *
 
@@ -6,7 +7,10 @@ import tkinter.filedialog as fd
 from tkinter import *
 from tkinter import messagebox, filedialog
 
-class menuBar:
+## =============================
+## Definition of class MenuBar
+## =============================
+class MenuBar:
     def __init__ (self, parent):
         textFont = ('ubuntu', 12)
         menubar = tk.Menu(parent.master, font=textFont)
@@ -20,24 +24,35 @@ class menuBar:
         fileDropdown.add_command(label="Quit", command=parent.master.destroy)
 
         aboutDropdown = tk.Menu(menubar, font = textFont, tearoff=0)
-        aboutDropdown.add_command(label="Release Notes", command=self.show_release_notes)
+        aboutDropdown.add_command(label="Release Notes", command=self.showReleaseNotes)
         aboutDropdown.add_separator()
-        aboutDropdown.add_command(label="About", command=self.show_about_message)
+        aboutDropdown.add_command(label="About", command=self.showAboutMessages)
+
+        infoDropdown = tk.Menu(menubar, font=textFont, tearoff=0)
+        infoDropdown.add_command(label="Contact Me", command=self.showPersonalInfo)
+        infoDropdown.add_separator()
+        infoDropdown.add_command(label="About", command=self.showPersonalInfo)
 
         menubar.add_cascade(label="File", menu=fileDropdown)
+        menubar.add_cascade(label="Info", menu=infoDropdown)
         menubar.add_cascade(label="About", menu=aboutDropdown)
 
 
-    def show_about_message(self):
+    def showAboutMessages(self):
         boxTitle = "About PyText"
         boxMessage = "Is a simple text editor made with Python and Tkinter library!"
         messagebox.showinfo(boxTitle, boxMessage)
 
 
-    def show_release_notes(self):
+    def showReleaseNotes(self):
         boxTitle = "Release Notes"
         boxMessage = "Version 0.1"
         messagebox.showinfo(boxTitle, boxMessage)
+
+    def showPersonalInfo(self):
+        boxTitle = "Info"
+        boxMessage = "Contact me with email at: vincenzo99.scalcione@gmail.com"
+        messagebox.showinfo(boxMessage, boxMessage);
 
 
 class statusBar:
@@ -68,7 +83,7 @@ class PyText:
         self.textarea.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
         self.scroll.pack(side=tk.RIGHT, fill=tk.Y)
 
-        self.menubar = menuBar(self)
+        self.menubar = MenuBar(self)
         self.statusbar = statusBar(self)
 
         self.shortcutsBind()
@@ -77,7 +92,7 @@ class PyText:
         if name:
             self.master.title(name + " - PyText")
         else:
-            self.master.title("Untitled - PyText")
+            self.master.title("Untitled file- PyText")
 
     def newFile(self, *args):
         self.textarea.delete(1.0, tk.END)
@@ -89,7 +104,7 @@ class PyText:
             defaultextension=".txt",
             filetypes=[("All files", "*.*"),
                        ("Text Files", "*.txt"),
-                       ("Batch  Executable files", "*.bat"),
+                       ("Batch Executable files", "*.bat"),
                        ("Sh Linux files", ".sh"),
                        ("Python Script files", "*.py"),
                        ("Markdown Text files", "*.md"),
