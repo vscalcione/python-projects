@@ -21,3 +21,13 @@ $ cd snake-python-game
 $ sudo chmod +x snake-game.py
 $ sudo python snake-game.py
 ```
+
+# Text-editor (with Tkinter Lib)
+This is a basic text-editor made in Python with the support of Tkinter's libraries
+For run the script (text-editor.py), execute the commands below:
+```bash
+$ sudo git clone "https://github.com/vscalcione/snake-python-game.git"
+$ cd snake-python-game
+$ sudo chmod +x text-editor.py
+$ sudo python text-editor.py
+```
