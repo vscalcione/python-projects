@@ -1,6 +1,9 @@
 import platform
 from os import system
 
+import sys
+from os import system
+
 import math
 
 from pip._vendor.distlib.compat import raw_input
@@ -102,25 +105,32 @@ def printMenu():
         {9} -- Quit
     ''')
 
-pyCalcPrompt = "user ~# "
-printMenu()
-choice = raw_input(pyCalcPrompt);
-clearScreenByOS()
-if choice == "1":
-    sum()
-elif choice == "2":
-    difference()
-elif choice == "3":
-    multiply()
-elif choice == "4":
-    quotient()
-elif choice == "5":
-    factorial()
-elif choice == "6":
-    pow()
-elif choice == "7":
-    numberSquare()
-elif choice == "8":
-    numberCube()
-elif choice == "9":
-    system.exit
+recursiveChoice = "y";
+while recursiveChoice == "y":
+    pyCalcPrompt = "user ~# "
+    printMenu()
+    choice = raw_input(pyCalcPrompt);
+    clearScreenByOS()
+    if choice == "1":
+        sum()
+    elif choice == "2":
+        difference()
+    elif choice == "3":
+        multiply()
+    elif choice == "4":
+        quotient()
+    elif choice == "5":
+        factorial()
+    elif choice == "6":
+        pow()
+    elif choice == "7":
+        numberSquare()
+    elif choice == "8":
+        numberCube()
+    elif choice == "9":
+        sys.exit
+        break
+    recursiveChoice = raw_input("{ --- Do you execute another operation y/n --- } " + pyCalcPrompt);
+    clearScreenByOS()
+    if recursiveChoice != "y":
+        break
