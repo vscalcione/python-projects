@@ -8,7 +8,6 @@ import math
 
 from pip._vendor.distlib.compat import raw_input
 
-
 ## Method that acquire input 2 values and adds them up ##
 def sum():
     num1 = raw_input("Insert first value: ");
@@ -19,7 +18,7 @@ def sum():
 ## Method that acquire input 2 values and subs them up ##
 def difference():
     num1 = raw_input("Insert first value: ")
-    num2 = raw_input("Insert second value")
+    num2 = raw_input("Insert second value: ")
     if num1 > num2:
         result = float(num1) - float(num2)
     else:
@@ -80,29 +79,29 @@ def clearScreenByOS():
 def printMenu():
     print('\n'
           ' ===================================================================\n'
-          '      _____        _____      _            _       _             \n'
-          '     |  __ \      / ____|    | |          | |     | |            \n'
-          '     | |__) |   _| |     __ _| | ___ _   _| | __ _| |_ ___  _ __ \n'
-          '     |  ___/ | | | |    / _` | |/ __| | | | |/ _` | __/ _ \| \'__|\n'
-          '     | |   | |_| | |____ (_| | | (__| |_| | | (_| | |_ (_) | |   \n'
-          '     |_|    \__, |\_____\__,_|_|\___|\__,_|_|\__,_|\__\___/|_|   \n'
-          '             __/ |                                               \n'
-          '            |___/\n'
-          '            \n'
-          '     Developed by:  Scalcione Vincenzo                                                \n'
+          '|      _____        _____      _            _       _               |\n'
+          '|     |  __ \      / ____|    | |          | |     | |              |\n'
+          '|     | |__) |   _| |     __ _| | ___ _   _| | __ _| |_ ___  _ __   |\n'
+          '|     |  ___/ | | | |    / _` | |/ __| | | | |/ _` | __/ _ \| \'__|  |\n'
+          '|     | |   | |_| | |____ (_| | | (__| |_| | | (_| | |_ (_) | |     |\n'
+          '|     |_|    \__, |\_____\__,_|_|\___|\__,_|_|\__,_|\__\___/|_|     |\n'
+          '|             __/ |                                                 |\n'
+          '|            |___/                                                  |\n'
+          '|                                                                   |\n'
+          '|     Developed by:  Scalcione Vincenzo                             |                  \n'
           ' ===================================================================\n'
           '    ')
 
     print(''' 
-        {1} -- Sum
-        {2} -- Difference
-        {3} -- Product
-        {4} -- Quotient
-        {5} -- Factorial
-        {6} -- Pow
-        {7} -- Square of a number
-        {8} -- Cube of a number
-        {9} -- Quit
+        1. --> Sum
+        2. --> Difference
+        3. --> Product
+        4. --> Quotient
+        5. --> Factorial
+        6. --> Pow
+        7. --> Square of a number
+        8. --> Cube of a number
+        9. --> Quit
     ''')
 
 recursiveChoice = "y";
