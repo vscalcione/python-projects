@@ -17,7 +17,7 @@ $ pip3 install pygame
 Clone repository with command and after GAME!!!
 ```bash
 $ git clone "https://github.com/vscalcione/python-projects.git"
-$ cd snake-python-game
+$ cd python-project
 $ sudo chmod +x snake-game.py
 $ sudo python snake-game.py
 ```
@@ -27,7 +27,7 @@ This is a basic text-editor made in Python with the support of Tkinter's librari
 For run the script (text-editor.py), execute the commands below:
 ```bash
 $ sudo git clone "https://github.com/vscalcione/python-projects.git"
-$ cd snake-python-game
+$ cd python-projects
 $ sudo chmod +x text-editor.py
 $ sudo python text-editor.py
 ```
@@ -37,7 +37,7 @@ This is a basic calculator with a command line interface made in Python
 For run the script (pyCalculator.py), execute the commands below:
 ```bash
 $ sudo git clone "https://github.com/vscalcione/python-projects.git"
-$ cd snake-python-game
+$ cd python-projects
 $ sudo chmod +x pyCalculator.py
 $ sudo python pyCalculator.py
 ```
