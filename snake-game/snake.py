@@ -18,13 +18,13 @@ def setup():
     gameDisplay = pygame.display.set_mode((displayWidth, displayHeigth))
     pygame.display.set_caption("Snake Game v 0.1")
 
-    iconGame = pygame.image.load("Images/v 0.1/apple.png")
+    iconGame = pygame.image.load("images/v 0.1/apple.png")
     pygame.display.set_icon(iconGame)
 
-    backgroundImage = pygame.image.load("Images/v 0.1/background.jpg")
-    headImage = pygame.image.load("Images/v 0.1/snakeHead.png")
-    appleImage = pygame.image.load("Images/v 0.1/apple.png")
-    bodyImage = pygame.image.load("Images/v 0.1/snakeBody.png")
+    backgroundImage = pygame.image.load("images/v 0.1/background.jpg")
+    headImage = pygame.image.load("images/v 0.1/snakeHead.png")
+    appleImage = pygame.image.load("images/v 0.1/apple.png")
+    bodyImage = pygame.image.load("images/v 0.1/snakeBody.png")
 
     clock = pygame.time.Clock()
     snakeSize = 20

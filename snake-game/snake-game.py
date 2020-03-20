@@ -12,9 +12,9 @@ pygame.init()
 
 ## Set fps, font e volume of the game ##
 fps = 60
-fpsClock = pygame.time.Clock()
-gameFont = pygame.font.Font(None, 24)
-gameVolume = 0.2
+fps_clock = pygame.time.Clock()
+game_font = pygame.font.Font(None, 24)
+game_volume = 0.2
 
 ## Define game colors (RGB hex values) ##
 WHITE = (255, 255, 255)
@@ -28,14 +28,14 @@ surface = pygame.display.set_mode((widthSize, heigthSize))
 pygame.display.set_caption("Snake Game")
 
 ## Definition of all images used in the game
-wallpaper = pygame.image.load("Images/wallpaper.png") ## wallpaper image
-gameover_image = pygame.image.load("Images/gameover.png") ##gameover image
-new_record = pygame.image.load("Images/new-record.png") ##new record image
-apple = pygame.image.load("Images/apple.png") ##apple image
-skull = pygame.image.load("Images/skull.png") ##enemy image
-halfed_tail = pygame.image.load("Images/halfed-tail.png") ##halfed_tail image
-pause_game = pygame.image.load("Images/pause.png") ##pause image
-icon = pygame.image.load("Images/snake_pygame-icon.png") ##icon image
+wallpaper = pygame.image.load("images/wallpaper.png") ## wallpaper image
+gameover_image = pygame.image.load("images/gameover.png") ##gameover image
+new_record = pygame.image.load("images/new-record.png") ##new record image
+apple = pygame.image.load("images/apple.png") ##apple image
+skull = pygame.image.load("images/skull.png") ##enemy image
+halfed_tail = pygame.image.load("images/halfed-tail.png") ##halfed_tail image
+pause_game = pygame.image.load("images/pause.png") ##pause image
+icon = pygame.image.load("images/snake_pygame-icon.png") ##icon image
 pygame.display.set_icon(icon)
 
 ## Creation of snake object
@@ -66,7 +66,7 @@ if not os.path.exists(path_data):
 
 def initialization():
     ## Definition of all variables that are used
-    global gameVolume, points, snake_x, snake_y, min, max_x, max_y, direction, previous_direction, difficult, record, bonus_icon, bonus_x, bonus_y
+    global game_volume, points, snake_x, snake_y, min, max_x, max_y, direction, previous_direction, difficult, record, bonus_icon, bonus_x, bonus_y
 
     try:
         record_file = open(path_data + "record.txt", "r") ## open file "record.txt" in read mode and assign it at variable record
@@ -79,8 +79,8 @@ def initialization():
     record = int(record_file.read())
     record_file.close()
     pygame.mixer.init()
-    pygame.mixer.music.load("Sound/music.ogg")
-    pygame.mixer.music.set_volume(gameVolume)
+    pygame.mixer.music.load("sound/music.ogg")
+    pygame.mixer.music.set_volume(game_volume)
     pygame.mixer.music.play(-1)
     points = 0
     snake_x = [180, 165, 150, 135, 120, 105]
@@ -120,10 +120,10 @@ def defineObjects(snake_x, snake_y):
 def show():
     global direction
     pygame.font.init()
-    score = gameFont.render('Score: %d' %(points), True, WHITE)
-    highscore = gameFont.render('Record: %d' %(record), True, WHITE)
-    vol = gameFont.render('Volume: %d' %(gameVolume * 5), True, WHITE)
-    bonus = gameFont.render('Bonus: [      ]', True, WHITE)
+    score = game_font.render('Score: %d' % (points), True, WHITE)
+    highscore = game_font.render('Record: %d' % (record), True, WHITE)
+    vol = game_font.render('Volume: %d' % (game_volume * 5), True, WHITE)
+    bonus = game_font.render('Bonus: [      ]', True, WHITE)
     surface.blit(wallpaper, (0, 0))
     surface.blit(score, (30, 8))
     surface.blit(highscore, (430, 8))
@@ -138,7 +138,7 @@ def show():
     if bonus_icon == '1':
         surface.blit(halfed_tail, (500, 384))
     pygame.display.update()
-    fpsClock.tick(fps)
+    fps_clock.tick(fps)
 
 
 def write():
@@ -236,11 +236,11 @@ while True:
                 pygame.mixer.music.set_volume(volume)
 
             elif event.key == K_KP_MINUS or event.key == K_MINUS:  # controllo se viene premuto il tasto - della tastiera o del numpad
-                if gameVolume > 0.0:
-                    gameVolume -= 0.2
-                elif gameVolume < 0.0:
-                    gameVolume = 0.0
-                pygame.mixer.music.set_volume(gameVolume)
+                if game_volume > 0.0:
+                    game_volume -= 0.2
+                elif game_volume < 0.0:
+                    game_volume = 0.0
+                pygame.mixer.music.set_volume(game_volume)
 
             elif event.key == K_ESCAPE:
                 gameOver()

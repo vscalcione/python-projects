@@ -1,5 +1,17 @@
-# Snake-game-python
+#python-projects
+This is a repository with all sources file of Python Development
 
+Clone repository with command and run all sources files!!!
+```bash
+$ git clone "https://github.com/vscalcione/python-projects.git"
+$ cd python-projects
+$ ls
+$ chatter-bot   meteo   py-calculator   snake-game text-editor
+```
+
+Choice your project and run
+
+##Snake-Game
 To run the game, you must first configure the environment with some layouts.
 
 Install these dependecies:
@@ -13,31 +25,31 @@ After, install pygame dependencies to run game in complete autonomy
 $ sudo apt-get install python-pygame (pygame dependency)
 $ sudo apt-get install python3-pip (pygame repository explorer/installer)
 $ pip3 install pygame
-```
-Clone repository with command and after GAME!!!
-```bash
-$ git clone "https://github.com/vscalcione/python-projects.git"
-$ cd python-project
-$ sudo chmod +x snake-game.py
-$ sudo python snake-game.py
+$ cd snake-game
+$ sudo python {oneOfSourceFile.py} OR sudo chmod +x {oneOfSourceFile.py}
 ```
 
-# Text-editor (with Tkinter Lib)
-This is a basic text-editor made in Python with the support of Tkinter's libraries
-For run the script (text-editor.py), execute the commands below:
+##Chatter-bot
+
+##Meteo
+This is a simply meteo application with use of OpenWeather API. The GUI is made with Tkinter. For run this application:
 ```bash
-$ sudo git clone "https://github.com/vscalcione/python-projects.git"
 $ cd python-projects
-$ sudo chmod +x text-editor.py
-$ sudo python text-editor.py
+$ cd meteo
+$ sudo python weather_app.py OR sudo chomod +x weather_app.py ; ./weather_app.py
+```
+##Py-Calculator
+This is a simply scientific calculator made in python with CLI interface. For run this project:
+```bash
+$ cd python-projects
+$ cd py-calculator
+$ sudo python py-calculator.py OR sudo chmod +x py-calculator; ./py-calculator.py
 ```
 
-# PyCalculator
-This is a basic calculator with a command line interface made in Python
-For run the script (pyCalculator.py), execute the commands below:
+##Text-Editor (with Tkinter Library)
+This is a basic text-editor made in Python with the support of Tkinter's libraries For run the script (text-editor.py), execute the commands below:
 ```bash
-$ sudo git clone "https://github.com/vscalcione/python-projects.git"
 $ cd python-projects
-$ sudo chmod +x pyCalculator.py
-$ sudo python pyCalculator.py
+$ cd text-editor
+$ sudo python text-editor OR sudo chmod +x text-editor.py ; ./text-editor.py
 ```
