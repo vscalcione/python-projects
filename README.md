@@ -1,4 +1,4 @@
-#python-projects
+## python-project
 This is a repository with all sources file of Python Development
 
 Clone repository with command and run all sources files!!!
@@ -11,7 +11,7 @@ $ chatter-bot   meteo   py-calculator   snake-game text-editor
 
 Choice your project and run
 
-##Snake-Game
+## Snake-Game
 To run the game, you must first configure the environment with some layouts.
 
 Install these dependecies:
@@ -29,16 +29,16 @@ $ cd snake-game
 $ sudo python {oneOfSourceFile.py} OR sudo chmod +x {oneOfSourceFile.py}
 ```
 
-##Chatter-bot
+## Chatter-bot
 
-##Meteo
+## Meteo
 This is a simply meteo application with use of OpenWeather API. The GUI is made with Tkinter. For run this application:
 ```bash
 $ cd python-projects
 $ cd meteo
 $ sudo python weather_app.py OR sudo chomod +x weather_app.py ; ./weather_app.py
 ```
-##Py-Calculator
+## Py-Calculator
 This is a simply scientific calculator made in python with CLI interface. For run this project:
 ```bash
 $ cd python-projects
@@ -46,7 +46,7 @@ $ cd py-calculator
 $ sudo python py-calculator.py OR sudo chmod +x py-calculator; ./py-calculator.py
 ```
 
-##Text-Editor (with Tkinter Library)
+## Text-Editor (with Tkinter Library)
 This is a basic text-editor made in Python with the support of Tkinter's libraries For run the script (text-editor.py), execute the commands below:
 ```bash
 $ cd python-projects
