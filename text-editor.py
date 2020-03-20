@@ -1,69 +1,69 @@
-## ========== Text-editor developed by Scalcione Vincenzo ========== ##
+# ========== Text-editor developed by Scalcione Vincenzo ==========
 
 import tkinter as tk
-from tkinter import *
 
-import tkinter.filedialog as fd
-from tkinter import *
 from tkinter import messagebox, filedialog
 
-## =============================
-## Definition of class MenuBar
-## =============================
+
+# =============================
+# Definition of class MenuBar
+# =============================
+
+def show_about_messages():
+    box_title = "About PyText"
+    box_message = "Is a simple text editor made with Python and Tkinter library!"
+    messagebox.showinfo(box_title, box_message)
+
+
 class MenuBar:
-    def __init__ (self, parent):
-        textFont = ('ubuntu', 12)
-        menubar = tk.Menu(parent.master, font=textFont)
-        parent.master.config(menu=menubar)
-        fileDropdown = tk.Menu(menubar, font=textFont, tearoff=0)
-        fileDropdown.add_command(label="New File", accelerator="Ctrl+N", command=parent.newFile)
-        fileDropdown.add_command(label="Open File", accelerator="Ctrl+O", command=parent.openFile)
-        fileDropdown.add_command(label="Save", accelerator="Ctrl+S", command=parent.save)
-        fileDropdown.add_command(label="Save as", accelerator="Ctrl+Shift+S", command=parent.saveAs)
-        fileDropdown.add_separator()
-        fileDropdown.add_command(label="Quit", command=parent.master.destroy)
-
-        aboutDropdown = tk.Menu(menubar, font = textFont, tearoff=0)
-        aboutDropdown.add_command(label="Release Notes", command=self.showReleaseNotes)
-        aboutDropdown.add_separator()
-        aboutDropdown.add_command(label="About", command=self.showAboutMessages)
-
-        infoDropdown = tk.Menu(menubar, font=textFont, tearoff=0)
-        infoDropdown.add_command(label="Contact Me", command=self.showPersonalInfo)
-        infoDropdown.add_separator()
-        infoDropdown.add_command(label="About", command=self.showPersonalInfo)
-
-        menubar.add_cascade(label="File", menu=fileDropdown)
-        menubar.add_cascade(label="Info", menu=infoDropdown)
-        menubar.add_cascade(label="About", menu=aboutDropdown)
-
-
-    def showAboutMessages(self):
-        boxTitle = "About PyText"
-        boxMessage = "Is a simple text editor made with Python and Tkinter library!"
-        messagebox.showinfo(boxTitle, boxMessage)
-
-
-    def showReleaseNotes(self):
-        boxTitle = "Release Notes"
-        boxMessage = "Version 0.1"
-        messagebox.showinfo(boxTitle, boxMessage)
-
-    def showPersonalInfo(self):
-        boxTitle = "Info"
-        boxMessage = "Contact me with email at: vincenzo99.scalcione@gmail.com"
-        messagebox.showinfo(boxMessage, boxMessage);
-
-
-class statusBar:
     def __init__(self, parent):
-        textFont = ('ubuntu', 12)
+        text_font = ('ubuntu', 12)
+        menu_bar = tk.Menu(parent.master, font=text_font)
+        parent.master.config(menu=menu_bar)
+        file_dropdown = tk.Menu(menu_bar, font=text_font, tearoff=0)
+        file_dropdown.add_command(label="New File", accelerator="Ctrl+N", command=parent.new_file)
+        file_dropdown.add_command(label="Open File", accelerator="Ctrl+O", command=parent.open_file)
+        file_dropdown.add_command(label="Save", accelerator="Ctrl+S", command=parent.save)
+        file_dropdown.add_command(label="Save as", accelerator="Ctrl+Shift+S", command=parent.save_as)
+        file_dropdown.add_separator()
+        file_dropdown.add_command(label="Quit", command=parent.master.destroy)
+
+        about_dropdown = tk.Menu(menu_bar, font=text_font, tearoff=0)
+        about_dropdown.add_command(label="Release Notes", command=self.show_release_notes)
+        about_dropdown.add_separator()
+        about_dropdown.add_command(label="About", command=show_about_messages)
+
+        info_dropdown = tk.Menu(menu_bar, font=text_font, tearoff=0)
+        info_dropdown.add_command(label="Contact Me", command=self.show_personal_info)
+        info_dropdown.add_separator()
+        info_dropdown.add_command(label="About", command=self.show_personal_info)
+
+        menu_bar.add_cascade(label="File", menu=file_dropdown)
+        menu_bar.add_cascade(label="Info", menu=info_dropdown)
+        menu_bar.add_cascade(label="About", menu=about_dropdown)
+
+    @staticmethod
+    def show_release_notes():
+        box_title = "Release Notes"
+        box_message = "Version 0.1"
+        messagebox.showinfo(box_title, box_message)
+
+    @staticmethod
+    def show_personal_info():
+        box_title = "Info"
+        box_message = "Contact me with email at: vincenzo99.scalcione@gmail.com"
+        messagebox.showinfo(box_title, box_message);
+
+
+class StatusBar:
+    def __init__(self, parent):
+        text_font = ('ubuntu', 12)
         self.status = tk.StringVar()
         self.status.set("PyText version 0.1")
-        label = tk.Label(parent.textarea, textvariable=self.status, fg="black", bg="lightgrey", anchor='sw', font=textFont)
+        label = tk.Label(parent.textarea, textvariable=self.status, fg="black", bg="lightgrey", anchor='sw', font=text_font)
         label.pack(side=tk.BOTTOM, fill=tk.BOTH)
 
-    def updateStatus(self, *args):
+    def update_status(self, *args):
         if isinstance(args[0], bool):
             self.status.set("Your file is saved")
         else:
@@ -74,32 +74,32 @@ class PyText:
     def __init__(self, master):
         master.title("New File (Untitled) - PyText")
         master.geometry("1200x700")
-        textFont = ('ubuntu', 14)
+        text_font = ('ubuntu', 14)
         self.master = master
         self.filename = None
-        self.textarea = tk.Text(master, font=textFont)
+        self.textarea = tk.Text(master, font=text_font)
         self.scroll = tk.Scrollbar(master, command=self.textarea.yview)
         self.textarea.configure(yscrollcommand=self.scroll.set)
         self.textarea.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
         self.scroll.pack(side=tk.RIGHT, fill=tk.Y)
 
         self.menubar = MenuBar(self)
-        self.statusbar = statusBar(self)
+        self.statusbar = StatusBar(self)
 
-        self.shortcutsBind()
+        self.shortcuts_bind()
 
-    def setWindowTitle(self, name=None):
+    def set_window_title(self, name=None):
         if name:
             self.master.title(name + " - PyText")
         else:
             self.master.title("Untitled file- PyText")
 
-    def newFile(self, *args):
+    def new_file(self, *args):
         self.textarea.delete(1.0, tk.END)
         self.filename = None
-        self.setWindowTitle()
+        self.set_window_title()
 
-    def openFile(self, *args):
+    def open_file(self, *args):
         self.filename = filedialog.askopenfilename(
             defaultextension=".txt",
             filetypes=[("All files", "*.*"),
@@ -115,7 +115,7 @@ class PyText:
             self.textarea.delete(1.0, tk.END)
             with open(self.filename, "r") as f:
                 self.textarea.insert(1.0, f.read())
-            self.setWindowTitle(self.filename)
+            self.set_window_title(self.filename)
 
     def save(self, *args):
         if self.filename:
@@ -126,11 +126,11 @@ class PyText:
             except Exception as e:
                 print(e)
         else:
-            self.saveAs()
+            self.save_as()
 
-    def saveAs(self, *args):
+    def save_as(self, *args):
         try:
-            newFile = filedialog.asksaveasfilename(
+            new_file = filedialog.asksaveasfilename(
                 initialfile='.txt',
                 defaultextension=".txt",
                 filetypes=[("All files", "*.*"),
@@ -142,21 +142,22 @@ class PyText:
                            ("Javascript Script files", "*.js"),
                            ("HTML files", "*.html *.htm"),
                            ("Stylesheet files", "*.css")])
-            with open(newFile, 'w') as f:
+            with open(new_file, 'w') as f:
                 textarea_content = self.textarea.get(1.0, tk.END)
                 f.write(textarea_content)
-            self.filename = newFile
-            self.setWindowTitle(self.filename)
-            self.statusbar.updateStatus(True)
+            self.filename = new_file
+            self.set_window_title(self.filename)
+            self.statusbar.update_status(True)
         except Exception as exception:
             print(exception)
 
-    def shortcutsBind(self):
-        self.textarea.bind('<Control-n>', self.newFile)
-        self.textarea.bind('<Control-o>', self.openFile)
+    def shortcuts_bind(self):
+        self.textarea.bind('<Control-n>', self.new_file)
+        self.textarea.bind('<Control-o>', self.open_file)
         self.textarea.bind('<Control-s>', self.save)
-        self.textarea.bind('<Control-S>', self.saveAs)
-        self.textarea.bind('<Key>', self.statusbar.updateStatus)
+        self.textarea.bind('<Control-S>', self.save_as)
+        self.textarea.bind('<Key>', self.statusbar.update_status)
+
 
 if __name__ == "__main__":
     master = tk.Tk()
