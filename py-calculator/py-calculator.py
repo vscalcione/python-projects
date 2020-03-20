@@ -8,14 +8,16 @@ import math
 
 from pip._vendor.distlib.compat import raw_input
 
-## Method that acquire input 2 values and adds them up ##
+
+# Method that acquire input 2 values and adds them up ##
 def sum():
     num1 = raw_input("Insert first value: ");
     num2 = raw_input("Insert second value: ")
     result = float(num1) + float(num2);
     print("Sum to: " + num1 + " and " + num2 + " : " + str(result))
 
-## Method that acquire input 2 values and subs them up ##
+
+# Method that acquire input 2 values and subs them up ##
 def difference():
     num1 = raw_input("Insert first value: ")
     num2 = raw_input("Insert second value: ")
@@ -25,14 +27,16 @@ def difference():
         result = float(num2) - float(num1)
     print("Difference to: " + num1 + " and " + num2 + " : " + str(result))
 
-## Method that acquire input 2 values and multiply them up ##
+
+# Method that acquire input 2 values and multiply them up ##
 def multiply():
     num1 = raw_input("Insert first value: ")
     num2 = raw_input("Insert second value: ")
     result = float(num1) * float(num2)
     print("Product to: " + num1 + " and " + num2 + " : " + str(result))
 
-## Method that acquire input 2 values and divede them up ##
+
+# Method that acquire input 2 values and divede them up ##
 def quotient():
     num1 = raw_input("Insert first value: ")
     num2 = raw_input("Insert second value: ")
@@ -42,41 +46,47 @@ def quotient():
         print("Error")
     print("Quotient to : " + num1 + " and " + num2 + " : " + str(result))
 
-## Method that acquire input 1 value and calculate the factorial of this value ##
+
+# Method that acquire input 1 value and calculate the factorial of this value ##
 def factorial():
     num = raw_input("Insert value: ")
     result = math.factorial(num)
     print("Factorial of: " + num + " : " + str(result))
 
-## Method that acquire input 2 values (base, exponent) and calculate the pow ##
+
+# Method that acquire input 2 values (base, exponent) and calculate the pow ##
 def pow():
     base = raw_input("Insert base: ")
     exponent = raw_input("Insert exponent: ")
     result = math.pow(float(base), float(exponent))
     print("Pow of " + base + " elevate to: " + exponent + " : " + str(result))
 
-## Method that acquire a value and calculate its square ##
-def numberSquare():
+
+# Method that acquire a value and calculate its square ##
+def number_square():
     num = raw_input("Insert value: ")
     result = float(num) ** 2
     print("Square of " + num + " : " + str(result))
 
-## Method that acquire a value and calculate its cube ##
-def numberCube():
+
+# Method that acquire a value and calculate its cube ##
+def number_cube():
     num = raw_input("Insert value: ")
     result = float(num) ** 3
     print("Square of " + num + " : " + str(result))
 
-## Method that cleans the screen with a command that changes according to the operating system in use ##
-def clearScreenByOS():
-    OS = platform.system()
-    if OS == "Linux":
+
+# Method that cleans the screen with a command that changes according to the operating system in use ##
+def clear_screen_by_os():
+    os = platform.system()
+    if os == "Linux":
         system("clear")
-    if OS == "Windows":
+    if os == "Windows":
         system("cls")
 
-## Method that print the menu ##
-def printMenu():
+
+# Method that print the menu ##
+def print_menu():
     print('\n'
           ' ===================================================================\n'
           '|      _____        _____      _            _       _               |\n'
@@ -104,12 +114,13 @@ def printMenu():
         9. --> Quit
     ''')
 
-recursiveChoice = "y";
-while recursiveChoice == "y":
-    pyCalcPrompt = "user ~# "
-    printMenu()
-    choice = raw_input(pyCalcPrompt);
-    clearScreenByOS()
+
+recursive_choice = "y";
+while recursive_choice == "y":
+    py_calc_prompt = "user ~# "
+    print_menu()
+    choice = raw_input(py_calc_prompt);
+    clear_screen_by_os()
     if choice == "1":
         sum()
     elif choice == "2":
@@ -123,13 +134,13 @@ while recursiveChoice == "y":
     elif choice == "6":
         pow()
     elif choice == "7":
-        numberSquare()
+        number_square()
     elif choice == "8":
-        numberCube()
+        number_cube()
     elif choice == "9":
         sys.exit
         break
-    recursiveChoice = raw_input("{ --- Do you execute another operation y/n --- } " + pyCalcPrompt);
-    clearScreenByOS()
-    if recursiveChoice != "y":
+    recursive_choice = raw_input("{ --- Do you execute another operation y/n --- } " + py_calc_prompt);
+    clear_screen_by_os()
+    if recursive_choice != "y":
         break
