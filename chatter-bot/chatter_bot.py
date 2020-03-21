@@ -1,33 +1,33 @@
 from chatterbot import ChatBot
 from chatterbot.trainers import ListTrainer
+from chatterbot.response_selection import get_first_response
+from chatterbot.comparisons import levenshtein_distance
+
+import logging
+
+logging.basicConfig(level=logging.CRITICAL)
 
 bot = ChatBot(
     "Chappie",
     storage_adapter="chatterbot.storage.SQLStorageAdapter",
     database="./db.sqlite3",
-    input_adapter="chatterbot.input.VariableInputTypeAdapter",
-    output_adapter="chatterbot.output.OutputAdapter",
     logic_adapters=[
-        {
-            "import_path": "chatterbot.logic.BestMatch",
-            "statement_comparison_function": "chatterbot.comparisons.levenshtein_distance",
-            "response_selection_method": "chatterbot.response_selection.get_first_response"
-        }
-    ]
+        "chatterbot.logic.BestMatch"
+    ],
+    statement_comparison_function=levenshtein_distance,
+    response_selection_method=get_first_response
 )
 
-
-with open("../chatter-bot/chatter_bot_messages.txt") as f:
+with open("/home/vscalcione/Documenti/python/python-projects/chatter-bot/chatter_bot_messages.txt") as f:
     conversation = f.readlines()
-    bot.set_trainer(ListTrainer)
-    bot.train(conversation)
-
+    trainer = ListTrainer(bot)
+    trainer.train(conversation)
 
 while True:
     try:
-        user_input = input("msg: ")
-        response = bot.get_response(user_input)
-        print("bot:", response)
-    except(KeyboardInterrupt, SystemExit):
-        print("goodbye!")
+        user_input = input("Tu: ")
+        bot_response = bot.get_response(user_input)
+        print("Chappie: ", bot_response)
+    except(KeyboardInterrupt, EOFError, SystemExit):
+        print("GoodBye!")
         break
