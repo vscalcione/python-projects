@@ -53,3 +53,14 @@ $ cd python-projects
 $ cd text-editor
 $ sudo python text-editor OR sudo chmod +x text-editor.py ; ./text-editor.py
 ```
+
+## Reverse Shell
+This is a basic client-server cli application that permit to run commands by client machine.
+<br>
+To run this script, execute all commands below:
+```bash
+$ cd reverse-shell
+$ "Open terminal and run" sudo python3 server.py
+$ "Open another terminal and run" sudo python3 client.py
+``` 
+And then execute all commands on terminal with execute client.py
