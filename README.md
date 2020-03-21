@@ -63,4 +63,4 @@ $ cd reverse-shell
 $ "Open terminal and run" sudo python3 server.py
 $ "Open another terminal and run" sudo python3 client.py
 ``` 
-And then execute all commands on terminal with execute client.py
+And then execute all commands on terminal with execute client.py   
