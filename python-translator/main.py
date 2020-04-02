@@ -1,6 +1,7 @@
 import gui
 import sys
 import googletrans
+import PyQt5
 from PyQt5 import QtWidgets, QtCore, QtGui
 from PyQt5.QtWidgets import QMessageBox
 
@@ -13,8 +14,8 @@ class Main(QtWidgets.QMainWindow, gui.Ui_Dialog):
         self.textEdit.clear()
         self.add_languages()
 
-        self.pushButton.clicked.connect(self.translate())
-        self.pushButton_2.clicked.connect(self.clear())
+        self.pushButton_2.clicked.connect(self.translate)
+        self.pushButton_3.clicked.connect(self.clear)
 
     def add_languages(self):
         for x in googletrans.LANGUAGES.values():
@@ -29,9 +30,9 @@ class Main(QtWidgets.QMainWindow, gui.Ui_Dialog):
 
             translator = googletrans.Translator()
             translate = translator.translate(text_1, src=language_1, dest=language_2)
-            self.textedit_2.setText(translate.text)
+            self.textEdit_2.setText(translate.text)
         except Exception as e:
-            pass
+            self.error_message(e)
 
     def error_message(self, text):
         msg = QMessageBox()
