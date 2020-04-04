@@ -1,0 +1,11 @@
+Lista script in python
+
+ordinamento array di interi/stringhe
+ricerca elemento in array con la sua occorrenza
+ricerca massimo/minimo elemento con la sua occorrenza in un array
+ricerca massimo/minimo elemento con la sua posizione in un array
+media di tutti gli elementi dell'array
+media di tutti gli elementi dell'array divisibili per 3
+stampa array ribaltato (al contrario)
+array di valori random
+
