@@ -100,7 +100,7 @@ def button(text, x, y, width, height, inactive_color, active_color, text_color=B
                 pause()
 
             if action == "start":
-                gameLoop()
+                game_loop()
 
             if action == "help":
                 pass
@@ -220,7 +220,7 @@ Returns: nothing (keep playing snake until exit)
 """
 
 
-def gameLoop(display_game_height=display_game_height):
+def game_loop(display_game_height=display_game_height):
     # Exit the entire game and when gameover
     game_exit = False
     game_over = False
@@ -263,7 +263,7 @@ def gameLoop(display_game_height=display_game_height):
                             game_over = False
 
                         if event.key == pygame.K_c:
-                            gameLoop()
+                            game_loop()
 
         # Game Exit check keys
         for event in pygame.event.get():
@@ -337,16 +337,13 @@ def gameLoop(display_game_height=display_game_height):
             pygame.display.update()
 
             # Check if ate apple
-            if (lead_snake_x >= rand_apple_x and lead_snake_x < rand_apple_x + apple_thickness or
-                    lead_snake_x + snake_size > rand_apple_x and
-                    lead_snake_x + snake_size < rand_apple_x + apple_thickness):
+            if rand_apple_x <= lead_snake_x < rand_apple_x + apple_thickness or rand_apple_x < lead_snake_x + snake_size < rand_apple_x + apple_thickness:
 
-                if (lead_snake_y >= rand_apple_y and lead_snake_y < rand_apple_y + apple_thickness):
+                if rand_apple_y <= lead_snake_y < rand_apple_y + apple_thickness:
                     rand_apple_x, rand_apple_y = rand_apple_gen(snake_list)
                     snake_length += 1
 
-                elif (lead_snake_y + snake_size > rand_apple_y and
-                      lead_snake_y + snake_size < rand_apple_y + apple_thickness):
+                elif rand_apple_y < lead_snake_y + snake_size < rand_apple_y + apple_thickness:
                     rand_apple_x, rand_apple_y = rand_apple_gen(snake_list)
                     snake_length += 1
 
@@ -359,4 +356,4 @@ def gameLoop(display_game_height=display_game_height):
 
 # Main Starts here. gall function
 game_intro()
-gameLoop()
+game_loop()

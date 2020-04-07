@@ -18,16 +18,34 @@ bot = ChatBot(
     response_selection_method=get_first_response
 )
 
-with open("/home/vscalcione/Documenti/python/python-projects/chatter-bot/chatter_bot_messages.txt") as f:
-    conversation = f.readlines()
-    trainer = ListTrainer(bot)
-    trainer.train(conversation)
+conversation = [
+    "ciao",
+    "come stai?",
+    "come ti chiami?",
+    "quanti anni hai?",
+    "sei un maschio o una femmina?",
+    "chi è il tuo creatore?",
+    "che lavoro fai?",
+    "come procede la quarantena?"
+]
 
-while True:
-    try:
-        user_input = input("Tu: ")
-        bot_response = bot.get_response(user_input)
-        print("Chappie: ", bot_response)
-    except(KeyboardInterrupt, EOFError, SystemExit):
-        print("GoodBye!")
-        break
+trainer = ListTrainer(bot)
+trainer.train(conversation)
+
+
+if __name__ == "__main__":
+    while True:
+        try:
+            user_input = input("Tu: ")
+            bot_response = bot.get_response(user_input)
+            print("Bot: ", bot_response)
+        except(KeyboardInterrupt, EOFError, SystemExit):
+            print("GoodBye!")
+            break
+
+
+def open_file_conversation():
+    with open("/path-of-file/chatter_bot_messages.txt") as f:
+        conversation_file = f.readlines()
+        trainer_mode = ListTrainer(bot)
+        trainer_mode.train(conversation_file)

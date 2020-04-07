@@ -24,6 +24,7 @@ def print_menu():
     print("1. Coffe \n2. Thea \n3. Orange juice \n4. Sandwich1 \n5. Sandwich2")
     print("************************************************************")
 
+
 if __name__ == "__main__":
     while True:
         os.system("clear")
