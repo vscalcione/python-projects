@@ -6,7 +6,7 @@ window.resizable(False, False)
 window.configure(background="cyan")
 
 
-# This function define a label for the interface and a button functionalityf
+# This function define a label for the interface and a button functionality
 def first_function():
     text = "Hello World"
     text_output = tk.Label(window, text=text, fg="red", font=("Segoe UI", 16))
