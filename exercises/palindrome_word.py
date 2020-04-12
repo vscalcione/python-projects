@@ -13,8 +13,7 @@ def is_palindrome_word():
 
 
 def print_menu():
-    print("==================================================")
-    print(" Palindrome Word")
+    print("==================================================\n Palindorme Word Checker")
     print("==================================================")
 
 
