@@ -70,9 +70,14 @@ $ cd python-projects
 $ cd meteo
 $ sudo python weather_app.py OR sudo chomod +x weather_app.py ; ./weather_app.py
 ```
-<br> 
+<br>
 
-## Reverse Shell
+## Python-Translator &nbsp; ![](https://img.icons8.com/color/48/000000/language.png)
+This is a simplier python translator with the use of googletrans API
+
+<br>
+
+## Reverse Shell &nbsp; ![](https://img.icons8.com/cute-clipart/48/000000/console.png)
 This is a basic client-server cli application that permit to run commands by client machine.
 <br>
 To run this script, execute all commands below:
@@ -81,9 +86,11 @@ $ cd reverse-shell
 $ "Open terminal and run" sudo python3 server.py
 $ "Open another terminal and run" sudo python3 client.py
 ``` 
-And then execute all commands on terminal with execute client.py 
+And then execute all commands on terminal with execute client.py
 
-## Snake-Game
+<br>
+
+## Snake-Game &nbsp; ![](https://img.icons8.com/color/48/000000/snake.png)
 To run the game, you must first configure the environment with some layouts.
 
 Install these dependecies:
