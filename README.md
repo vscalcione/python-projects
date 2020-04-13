@@ -1,15 +1,87 @@
-## python-project
-This is a repository with all sources file of Python Development
+## python-projects
+
+This is a repository with all sources file of Python Development.
 
 Clone repository with command and run all sources files!!!
 ```bash
 $ git clone "https://github.com/vscalcione/python-projects.git"
 $ cd python-projects
 $ ls
-$ chatter-bot   meteo   py-calculator   snake-game text-editor
+$ chatter-bot   exercises   meteo   python-translator   reverse-shell   snake-game
 ```
 
+![python_logo](https://img.icons8.com/color/144/000000/python.png)
+
+## Packaging
+- Chatter Bot
+- Exercises
+- Py Meteo
+- Python Translator
+- Reverse Shell 
+- Snake Game
+
 Choice your project and run
+
+
+## Chatter-bot &nbsp; ![](https://img.icons8.com/color/48/000000/bot.png)
+
+To run this chatter-bot, you mtype this command on shell
+```bash
+$ cd chatter-bot && python3 chatter_bot
+```
+After, you can try to use your chatter-bot with a powerfull conversation with AI
+
+<br>
+
+## Exercises &nbsp; ![](https://img.icons8.com/color/48/000000/code.png)
+- ascii_print.py
+- asterisks_square.py
+- binary_converter.py
+- cli_calculator.py
+- ddos_attack_simulator.py
+- email_sender.py
+- fibonacci_sequence.py
+- food_drink_distributor.py
+- keylogger.py
+- palindrome_word.py
+- password_cracker.py
+- print_string.py
+- pymatrix.py
+- python_interface_tk.py
+- reverse_array.py
+- reversed_string.py
+- search_max_min_value_array.py
+- string_array_sorting.py
+- student_exam.py
+- sum_10_numbers.py
+- swap_values.py
+- text_editor.py
+- zero_counter.py
+
+```bash
+Choose one of these script and run this command:
+$ sudo python3 ${fileName}.py
+```
+
+## Meteo &nbsp; ![](https://img.icons8.com/color/48/000000/summer.png)
+This is a simply meteo application with use of OpenWeather API. The GUI is made with Tkinter. For run this application:
+```bash
+$ cd python-projects
+$ cd meteo
+$ sudo python weather_app.py OR sudo chomod +x weather_app.py ; ./weather_app.py
+```
+<br> 
+
+## Reverse Shell
+This is a basic client-server cli application that permit to run commands by client machine.
+<br>
+To run this script, execute all commands below:
+```bash
+$ cd reverse-shell
+$ "Open terminal and run" sudo python3 server.py
+$ "Open another terminal and run" sudo python3 client.py
+``` 
+And then execute all commands on terminal with execute client.py 
 
 ## Snake-Game
 To run the game, you must first configure the environment with some layouts.
@@ -28,39 +100,4 @@ $ pip3 install pygame
 $ cd snake-game
 $ sudo python {oneOfSourceFile.py} OR sudo chmod +x {oneOfSourceFile.py}
 ```
-
-## Chatter-bot
-
-## Meteo
-This is a simply meteo application with use of OpenWeather API. The GUI is made with Tkinter. For run this application:
-```bash
-$ cd python-projects
-$ cd meteo
-$ sudo python weather_app.py OR sudo chomod +x weather_app.py ; ./weather_app.py
-```
-## Py-Calculator
-This is a simply scientific calculator made in python with CLI interface. For run this project:
-```bash
-$ cd python-projects
-$ cd py-calculator
-$ sudo python py-calculator.py OR sudo chmod +x py-calculator; ./py-calculator.py
-```
-
-## Text-Editor (with Tkinter Library)
-This is a basic text-editor made in Python with the support of Tkinter's libraries For run the script (text-editor.py), execute the commands below:
-```bash
-$ cd python-projects
-$ cd text-editor
-$ sudo python text-editor OR sudo chmod +x text-editor.py ; ./text-editor.py
-```
-
-## Reverse Shell
-This is a basic client-server cli application that permit to run commands by client machine.
-<br>
-To run this script, execute all commands below:
-```bash
-$ cd reverse-shell
-$ "Open terminal and run" sudo python3 server.py
-$ "Open another terminal and run" sudo python3 client.py
-``` 
-And then execute all commands on terminal with execute client.py   
+  
