@@ -62,7 +62,7 @@ def encode_comune(comune_name):
 
 def calculate_control_code(code):
     control_pair = sum(dispair(x) for x in code[::2])
-    control_dispair = sum(pair(x) for x in code [1::2])
+    control_dispair = sum(pair(x) for x in code[1::2])
     return calculate_last_char((control_pair + control_dispair) % 26)
 
 

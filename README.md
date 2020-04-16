@@ -7,7 +7,7 @@ Clone repository with command and run all sources files!!!
 $ git clone "https://github.com/vscalcione/python-projects.git"
 $ cd python-projects
 $ ls
-$ chatter-bot   exercises   meteo   python-translator   reverse-shell   snake-game
+$ chatter-bot   exercises   meteo   py-fiscal-code     python-translator   reverse-shell   snake-game
 ```
 
 ![python_logo](https://img.icons8.com/color/144/000000/python.png)
@@ -16,6 +16,7 @@ $ chatter-bot   exercises   meteo   python-translator   reverse-shell   snake-ga
 - Chatter Bot
 - Exercises
 - Py Meteo
+- Py Fiscal-Code
 - Python Translator
 - Reverse Shell 
 - Snake Game
@@ -108,3 +109,12 @@ $ cd snake-game
 $ sudo python {oneOfSourceFile.py} OR sudo chmod +x {oneOfSourceFile.py}
 ```
   
+## Py Fiscal Code ![](https://img.icons8.com/bubbles/50/000000/user.png)
+Fiscal Code calculation in Python 3.x. <br>
+The script allows you to calculate the fiscal code interactively (i.e. passing the various parameters in the bash invoking the right command) <br>
+The correct syntax is 
+```bash
+python3 py_fiscal_code.py name surname sex birth_date comune_name 
+```
+Sex must be one of the following alternatives: m/M for Male or f/F for Female. In addition, the date must be in the format 
+dd/mm/yyyy
