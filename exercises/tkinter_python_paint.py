@@ -37,10 +37,19 @@ def change_brush_color():
     global brush_color
     brush_color = "black"
     brush_color = colorchooser.askcolor(color=brush_color)[1]
-    color = Label(root, text=brush_color)
-    color.pack(pady=20)
 
-def change_canvas_color(thing):
+def change_canvas_color():
+    global background_color
+    background_color = "black"
+    background_color = colorchooser.askcolor(color=background_color)[1]
+    my_canvas.config(bg=background_color)
+
+# Clear screen
+def clear_screen():
+    pass
+
+# Save image
+def save_image():
     pass
 
 # Create our canvas
@@ -93,6 +102,18 @@ brush_color_button.pack(pady=10, padx=10)
 # Change Canvas Background Color
 canvas_color_button = Button(change_colors_frame, text="Canvas Color", command=change_canvas_color)
 canvas_color_button.pack(pady=10, padx=10)
+
+# Program Options Frame
+options_frame = LabelFrame(brush_options_frame, text="Program Options")
+options_frame.grid(row=0, column=3, padx=50)
+
+# Clear Screen button
+clear_button = Button(options_frame, text="Clear Screen", command=clear_screen)
+clear_button.pack(padx=10, pady=10)
+
+# Save Image
+save_image_button = Button(options_frame, text="Save To PNG", command=save_image)
+save_image_button.pack(padx=10, pady=10)
 
 if __name__ == "__main__":
     root.mainloop()
