@@ -7,6 +7,7 @@ import logging
 
 logging.basicConfig(level=logging.CRITICAL)
 
+# Definition of bot
 bot = ChatBot(
     "Chappie",
     storage_adapter="chatterbot.storage.SQLStorageAdapter",
@@ -31,7 +32,6 @@ conversation = [
 
 trainer = ListTrainer(bot)
 trainer.train(conversation)
-
 
 if __name__ == "__main__":
     while True:
