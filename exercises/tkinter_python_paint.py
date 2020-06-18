@@ -1,7 +1,8 @@
 from tkinter import *
 import tkinter.ttk as ttk
 from tkinter import colorchooser
-
+from tkinter import filedialog
+import os
 root = Tk()
 root.title('Python Tkinter Paint')
 root.geometry("800x800")
@@ -39,19 +40,26 @@ def change_brush_color():
     brush_color = colorchooser.askcolor(color=brush_color)[1]
 
 def change_canvas_color():
-    global background_color
-    background_color = "black"
-    background_color = colorchooser.askcolor(color=background_color)[1]
-    my_canvas.config(bg=background_color)
+    global bg_color
+    bg_color = "black"
+    bg_color = colorchooser.askcolor(color=bg_color)[1]
+    my_canvas.config(bg=bg_color)
 
 # Clear screen
 def clear_screen():
-    pass
-
+    my_canvas.delete(ALL)
+    my_canvas.config(bg="white")
+    
 # Save image
 def save_image():
-    pass
-
+    path = os.getcwd()
+    result = filedialog.asksaveasfilename(initialdir=path, filetypes=(
+        ("PNG files", "*.png"),
+        ("JPG files", "*.jpg"),
+        ("all files", "*.*")
+    ))
+    result_label = Label(root, text=result)
+    result_label.pack(pady=20)
 # Create our canvas
 w = 600
 h = 400
@@ -112,8 +120,9 @@ clear_button = Button(options_frame, text="Clear Screen", command=clear_screen)
 clear_button.pack(padx=10, pady=10)
 
 # Save Image
-save_image_button = Button(options_frame, text="Save To PNG", command=save_image)
+save_image_button = Button(options_frame, text="Save To PNG/JPG", command=save_image)
 save_image_button.pack(padx=10, pady=10)
+
 
 if __name__ == "__main__":
     root.mainloop()
