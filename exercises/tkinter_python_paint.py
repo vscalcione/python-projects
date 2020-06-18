@@ -5,15 +5,18 @@ from tkinter import colorchooser
 root = Tk()
 root.title('Python Tkinter Paint')
 root.geometry("800x800")
+brush_color = "black"
 
 def paint(event):
 
     # Brush params
     brush_width = '%0.0f' % float(my_slider.get())
-    brush_color = "green"
     
+    # brush_color = "green"
     # Brush Type: BUTT, ROUND, PROJECTING
-    brush_type = PROJECTING
+    # brush_type = PROJECTING
+
+    brush_type2 = brush_type.get()
 
     # Starting position
     x1 = event.x - 1
@@ -24,7 +27,7 @@ def paint(event):
     y2 = event.y + 1
 
     # Draw on the canvas
-    my_canvas.create_line(x1, y1, x2, y2, fill=brush_color, width=brush_width, capstyle=brush_type, smooth=True)
+    my_canvas.create_line(x1, y1, x2, y2, fill=brush_color, width=brush_width, capstyle=brush_type2, smooth=True)
 
 # Change the size of the brush
 def change_brush_size(thing):
