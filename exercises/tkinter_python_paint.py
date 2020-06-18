@@ -1,5 +1,6 @@
 from tkinter import *
 import tkinter.ttk as ttk
+from tkinter import colorchooser
 
 root = Tk()
 root.title('Python Tkinter Paint')
@@ -29,8 +30,12 @@ def paint(event):
 def change_brush_size(thing):
     slider_label.config(text='%0.0f' % float(my_slider.get()))
 
-def change_brush_color(thing):
-    pass
+def change_brush_color():
+    global brush_color
+    brush_color = "black"
+    brush_color = colorchooser.askcolor(color=brush_color)[1]
+    color = Label(root, text=brush_color)
+    color.pack(pady=20)
 
 def change_canvas_color(thing):
     pass
@@ -86,5 +91,6 @@ brush_color_button.pack(pady=10, padx=10)
 canvas_color_button = Button(change_colors_frame, text="Canvas Color", command=change_canvas_color)
 canvas_color_button.pack(pady=10, padx=10)
 
-root.mainloop()
+if __name__ == "__main__":
+    root.mainloop()
 
