@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ef65360d-86b6-4907-82b1-071ce25027ef" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/req.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/python-projects.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/python-projects.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/meteo/weather_app_without_icons.py" beforeDir="false" afterPath="$PROJECT_DIR$/meteo/weather_app_without_icons.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tkinter_mp3_player/images/back1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tkinter_mp3_player/images/forward.png" beforeDir="false" afterPath="$PROJECT_DIR$/tkinter_mp3_player/images/forward.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tkinter_mp3_player/images/pause.png" beforeDir="false" afterPath="$PROJECT_DIR$/tkinter_mp3_player/images/pause.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tkinter_mp3_player/images/play.png" beforeDir="false" afterPath="$PROJECT_DIR$/tkinter_mp3_player/images/play.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tkinter_mp3_player/images/stop.png" beforeDir="false" afterPath="$PROJECT_DIR$/tkinter_mp3_player/images/stop.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tkinter_mp3_player/tkinter_mp3_player.py" beforeDir="false" afterPath="$PROJECT_DIR$/tkinter_mp3_player/tkinter_mp3_player.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1ZPDEt64azm44pTdNYVFJ3Bxjyu" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/reverse-shell/reverse-shell" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\francesco\python-projects\python-projects\exercises" />
+      <recent name="C:\Users\francesco\python-projects\python-projects\text-editor" />
+      <recent name="C:\Users\francesco\python-projects\python-projects\py-calculator" />
+      <recent name="C:\Users\francesco\python-projects\python-projects" />
+      <recent name="C:\Users\francesco\python-projects\python-projects\snake-game" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.tkinter_mp3_player">
+    <configuration name="ddos_attack_simulator" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="python-projects" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\francesco\AppData\Local\Programs\Python\Python38-32\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/exercises" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/exercises/ddos_attack_simulator.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="fibonacci_sequence" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="python-projects" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\francesco\AppData\Local\Programs\Python\Python38-32\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/exercises" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/exercises/fibonacci_sequence.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="polymorfism_example" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="python-projects" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\francesco\AppData\Local\Programs\Python\Python38-32\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/exercises" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/exercises/polymorfism_example.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="tkinter_mp3_player" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="python-projects" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\francesco\AppData\Local\Programs\Python\Python38-32\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tkinter_mp3_player" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tkinter_mp3_player/tkinter_mp3_player.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="tkinter_python_paint" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="python-projects" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\francesco\AppData\Local\Programs\Python\Python38-32\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/exercises" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/exercises/tkinter_python_paint.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.fibonacci_sequence" />
+      <item itemvalue="Python.polymorfism_example" />
+      <item itemvalue="Python.ddos_attack_simulator" />
+      <item itemvalue="Python.tkinter_python_paint" />
+      <item itemvalue="Python.tkinter_mp3_player" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.tkinter_mp3_player" />
+        <item itemvalue="Python.tkinter_python_paint" />
+        <item itemvalue="Python.ddos_attack_simulator" />
+        <item itemvalue="Python.polymorfism_example" />
+        <item itemvalue="Python.fibonacci_sequence" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="showServicesTree" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ef65360d-86b6-4907-82b1-071ce25027ef" name="Default Changelist" comment="" />
+      <created>1584731726770</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1584731726770</updated>
+      <workItem from="1584731728741" duration="1785000" />
+      <workItem from="1584733530478" duration="120000" />
+      <workItem from="1584733674606" duration="3553000" />
+      <workItem from="1584822169824" duration="1185000" />
+      <workItem from="1585764969641" duration="2290000" />
+      <workItem from="1585769658557" duration="1236000" />
+      <workItem from="1585819971317" duration="1075000" />
+      <workItem from="1585821061556" duration="23000" />
+      <workItem from="1585830270649" duration="110000" />
+      <workItem from="1585836481790" duration="310000" />
+      <workItem from="1585909505909" duration="18000" />
+      <workItem from="1586014833688" duration="109000" />
+      <workItem from="1586017560455" duration="5494000" />
+      <workItem from="1586123833799" duration="1684000" />
+      <workItem from="1586185793504" duration="1442000" />
+      <workItem from="1586332960484" duration="6030000" />
+      <workItem from="1586628260186" duration="1786000" />
+      <workItem from="1586966189876" duration="367000" />
+      <workItem from="1592467853275" duration="2281000" />
+      <workItem from="1592472465270" duration="1644000" />
+      <workItem from="1593363620618" duration="116000" />
+      <workItem from="1594279614014" duration="775000" />
+      <workItem from="1594285043701" duration="653000" />
+      <workItem from="1596118037591" duration="783000" />
+    </task>
+    <task id="LOCAL-00001" summary="Other fixing code and root directory">
+      <created>1584734977027</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1584734977027</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Update Readme.md">
+      <created>1584735140932</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1584735140932</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Initial commit for Python reverse shell (cyber-security)">
+      <created>1584737449993</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1584737449993</updated>
+    </task>
+    <task id="LOCAL-00004" summary="To test">
+      <created>1584822810417</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1584822810417</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Initial commit for python translator">
+      <created>1585821028237</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1585821028237</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Asterisks square">
+      <created>1586020727020</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1586020727021</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Swap variables">
+      <created>1586021144877</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1586021144877</updated>
+    </task>
+    <task id="LOCAL-00008" summary="python scripts">
+      <created>1586027076566</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1586027076566</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Change directories">
+      <created>1586186141978</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1586186141978</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Add fibonacci_sequence.py">
+      <created>1586343389817</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1586343389817</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Add ddos_attack_simulator.py // to fix">
+      <created>1586630954719</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1586630954719</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Initial commit for fsociety.dat software">
+      <created>1586966563148</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1586966563148</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Update files">
+      <created>1592471192687</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1592471192687</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Other fixing code and root directory" />
+    <MESSAGE value="Update Readme.md" />
+    <MESSAGE value="Initial commit for Python reverse shell (cyber-security)" />
+    <MESSAGE value="To test" />
+    <MESSAGE value="Initial commit for python translator" />
+    <MESSAGE value="Asterisks square" />
+    <MESSAGE value="Swap variables" />
+    <MESSAGE value="python scripts" />
+    <MESSAGE value="Change directories" />
+    <MESSAGE value="Add fibonacci_sequence.py" />
+    <MESSAGE value="Add ddos_attack_simulator.py // to fix" />
+    <MESSAGE value="Initial commit for fsociety.dat software" />
+    <MESSAGE value="Update files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update files" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/python_projects$tkinter_mp3_player.coverage" NAME="tkinter_mp3_player Coverage Results" MODIFIED="1596118813587" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tkinter_mp3_player" />
+    <SUITE FILE_PATH="coverage/python_projects$server.coverage" NAME="server Coverage Results" MODIFIED="1584737210791" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/reverse-shell" />
+    <SUITE FILE_PATH="coverage/python_projects$snake_game.coverage" NAME="snake-game Coverage Results" MODIFIED="1584733975373" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/snake-game" />
+    <SUITE FILE_PATH="coverage/python_projects$swap_variables.coverage" NAME="swap_variables Coverage Results" MODIFIED="1586021084625" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exercises" />
+    <SUITE FILE_PATH="coverage/python_projects$gui.coverage" NAME="gui Coverage Results" MODIFIED="1585770852826" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python-translator" />
+    <SUITE FILE_PATH="coverage/python_projects$main.coverage" NAME="main Coverage Results" MODIFIED="1584822721032" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/password-reminder" />
+    <SUITE FILE_PATH="coverage/python_projects$ddos_attack_simulator.coverage" NAME="ddos_attack_simulator Coverage Results" MODIFIED="1586630814882" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exercises" />
+    <SUITE FILE_PATH="coverage/python_projects$asterisks_square.coverage" NAME="asterisks_square Coverage Results" MODIFIED="1586186197155" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exercises" />
+    <SUITE FILE_PATH="coverage/python_projects$client.coverage" NAME="client Coverage Results" MODIFIED="1584737231725" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/reverse-shell" />
+    <SUITE FILE_PATH="coverage/python_projects$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1585836597522" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python-translator" />
+    <SUITE FILE_PATH="coverage/python_projects$text_editor.coverage" NAME="text-editor Coverage Results" MODIFIED="1586185944047" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/text-editor" />
+    <SUITE FILE_PATH="coverage/python_projects$json_loader.coverage" NAME="json_loader Coverage Results" MODIFIED="1584822461150" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/password-reminder/Utils_library" />
+    <SUITE FILE_PATH="coverage/python_projects$print_value_multiples.coverage" NAME="print_value_multiples Coverage Results" MODIFIED="1586020622095" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exercises" />
+    <SUITE FILE_PATH="coverage/python_projects$weather_app.coverage" NAME="weather_app Coverage Results" MODIFIED="1586186087439" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/meteo" />
+    <SUITE FILE_PATH="coverage/python_projects$polymorfism_example.coverage" NAME="polymorfism_example Coverage Results" MODIFIED="1586341176357" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exercises" />
+    <SUITE FILE_PATH="coverage/python_projects$get_ip.coverage" NAME="get_ip Coverage Results" MODIFIED="1584736885753" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/reverse-shell" />
+    <SUITE FILE_PATH="coverage/python_projects$tkinter_python_paint.coverage" NAME="tkinter_python_paint Coverage Results" MODIFIED="1592473936742" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exercises" />
+    <SUITE FILE_PATH="coverage/python_projects$pymatrix.coverage" NAME="pymatrix Coverage Results" MODIFIED="1586022331804" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/matrix-rain" />
+    <SUITE FILE_PATH="coverage/python_projects$fibonacci_sequence.coverage" NAME="fibonacci_sequence Coverage Results" MODIFIED="1586333886188" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exercises" />
+    <SUITE FILE_PATH="coverage/python_projects$student_exam.coverage" NAME="student_exam Coverage Results" MODIFIED="1586124630400" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/exercises" />
+  </component>
+</project>

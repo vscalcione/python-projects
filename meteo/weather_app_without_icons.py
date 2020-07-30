@@ -63,12 +63,12 @@ submit.place(relx=0.7, relheight=1, relwidth=0.3)
 lower_frame = tk.Frame(app, bg='#42c2f4', bd=10)
 lower_frame.place(relx=0.5, rely=0.25, relwidth=0.75, relheight=0.6, anchor='n')
 
-bg_color = 'white'
+background_color = 'white'
 results = tk.Label(lower_frame, anchor='nw', justify='left', bd=4)
-results.config(font=40, bg=bg_color)
+results.config(font=40, bg=background_color)
 results.place(relwidth=1, relheight=1)
 
-weather_icon = tk.Canvas(results, bg=bg_color, bd=0, highlightthickness=0)
+weather_icon = tk.Canvas(results, bg=background_color, bd=0, highlightthickness=0)
 weather_icon.place(relx=.75, rely=0, relwidth=1, relheight=0.5)
 
 app.mainloop()
