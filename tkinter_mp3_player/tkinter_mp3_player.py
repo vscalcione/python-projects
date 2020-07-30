@@ -1,5 +1,6 @@
 from tkinter import * 
 from PIL import ImageTk, Image
+from tkinter import filedialog
 
 root = Tk()
 
@@ -8,7 +9,8 @@ root.geometry("500x400")
 
 # Create function to add one song to the playlist
 def add_song():
-	pass
+	song = filedialog.askopenfilename(initialdir='audio/', title='Choose a song', filetypes=(('mp3 Files', '*.mp3'),)) 	
+	my_label.config(text=song)
 
 # Create function to add many songs to the playlist
 def add_many_songs():
@@ -55,5 +57,10 @@ add_song_menu.add_command(label="Add One Song To Playlist", command=add_song)
 
 # Add many songs to playlist
 add_song_menu.add_command(label="Add Many Songs To Playlist", command=add_many_songs)
+
+# Add temporary label
+my_label = Label(root, text='')
+my_label.pack(pady=20)
+
 
 root.mainloop()
