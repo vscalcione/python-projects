@@ -1,6 +1,7 @@
 from tkinter import * 
 from PIL import ImageTk, Image
 from tkinter import filedialog
+import os
 
 root = Tk()
 
@@ -9,8 +10,13 @@ root.geometry("500x400")
 
 # Create function to add one song to the playlist
 def add_song():
+	current_dir = os.getcwd()
 	song = filedialog.askopenfilename(initialdir='audio/', title='Choose a song', filetypes=(('mp3 Files', '*.mp3'),)) 	
-	my_label.config(text=song)
+	
+	# Strip out directory structure and .mp3 from song title
+	song = song.replace(current_dir + "/audio/", "")
+	song = song.replace(".mp3", "")
+	playlist_box.insert(END, song)
 
 # Create function to add many songs to the playlist
 def add_many_songs():
