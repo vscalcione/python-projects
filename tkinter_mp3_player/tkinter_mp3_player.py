@@ -11,7 +11,7 @@ root.geometry("500x400")
 # Create function to add one song to the playlist
 def add_song():
 	current_dir = os.getcwd()
-	song = filedialog.askopenfilename(initialdir='audio/', title='Choose a song', filetypes=(('mp3 Files', '*.mp3'),)) 	
+	song = filedialog.askopenfilename(initialdir="audio/", title="Choose a song", filetypes=(("mp3 Files", "*.mp3"),)) 	
 	
 	# Strip out directory structure and .mp3 from song title
 	song = song.replace(current_dir + "/audio/", "")
@@ -20,18 +20,28 @@ def add_song():
 
 # Create function to add many songs to the playlist
 def add_many_songs():
-	pass
+	current_dir = os.getcwd()
+	songs = filedialog.askopenfilenames(initialdir="audio/", title="Choose songs", filetypes=(("mp3 Files", "*.mp3"),))
+	
+	# Loop song list and replace directory structure and mp3 from song name
+	for song in songs:
+		# Strip out directory structure and .mp3 from songs title
+		song = song.replace(current_dir + "/audio/", "")
+		song = song.replace(".mp3", "")
+		
+		# Add To end of the playlist
+		playlist_box.insert(END, song)
 
 # Create Playlist Box
-playlist_box = Listbox(root, bg="black", fg="green", width=60)
+playlist_box = Listbox(root, bg="black", fg="green", width=60, selectbackground="green", selectforeground="black")
 playlist_box.pack(pady=20)
 
 # Define Button Images
-back_btn_image = ImageTk.PhotoImage(Image.open('images/back.png'))
-pause_btn_image = ImageTk.PhotoImage(Image.open('images/pause.png'))
-play_btn_image = ImageTk.PhotoImage(Image.open('images/play.png'))
-stop_btn_image = ImageTk.PhotoImage(Image.open('images/stop.png'))
-forward_btn_image = ImageTk.PhotoImage(Image.open('images/forward.png'))
+back_btn_image = ImageTk.PhotoImage(Image.open("images/back.png"))
+pause_btn_image = ImageTk.PhotoImage(Image.open("images/pause.png"))
+play_btn_image = ImageTk.PhotoImage(Image.open("images/play.png"))
+stop_btn_image = ImageTk.PhotoImage(Image.open("images/stop.png"))
+forward_btn_image = ImageTk.PhotoImage(Image.open("images/forward.png"))
 
 # Create Button Frame
 control_frame = Frame(root)
